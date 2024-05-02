@@ -11,6 +11,12 @@
 		A5BCB30F2BE3B37D00386787 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB30E2BE3B37D00386787 /* ContentView.swift */; };
 		A5BCB3112BE3B37D00386787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BCB3102BE3B37D00386787 /* Assets.xcassets */; };
 		A5BCB3142BE3B37D00386787 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BCB3132BE3B37D00386787 /* Preview Assets.xcassets */; };
+		A5BCB31D2BE3B38D00386787 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB31C2BE3B38D00386787 /* Home.swift */; };
+		A5BCB31F2BE3B43D00386787 /* BlurWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB31E2BE3B43D00386787 /* BlurWindow.swift */; };
+		A5BCB3212BE3B86C00386787 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB3202BE3B86C00386787 /* TabButton.swift */; };
+		A5BCB3242BE3DFE000386787 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A5BCB3232BE3DFE000386787 /* SDWebImageSwiftUI */; };
+		A5BCB3272BE3E00600386787 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB3262BE3E00600386787 /* ImageModel.swift */; };
+		A5BCB32A2BE3E08800386787 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB3292BE3E08800386787 /* ImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,11 @@
 		A5BCB3102BE3B37D00386787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BCB3132BE3B37D00386787 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5BCB3152BE3B37D00386787 /* PinterstApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinterstApp.entitlements; sourceTree = "<group>"; };
+		A5BCB31C2BE3B38D00386787 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A5BCB31E2BE3B43D00386787 /* BlurWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurWindow.swift; sourceTree = "<group>"; };
+		A5BCB3202BE3B86C00386787 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		A5BCB3262BE3E00600386787 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		A5BCB3292BE3E08800386787 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BCB3242BE3DFE000386787 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +64,9 @@
 		A5BCB30B2BE3B37D00386787 /* PinterstApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5BCB3282BE3E06900386787 /* ViewModel */,
+				A5BCB3252BE3DFF300386787 /* Model */,
+				A5BCB31B2BE3B38200386787 /* View */,
 				A5BCB30C2BE3B37D00386787 /* PinterstAppApp.swift */,
 				A5BCB30E2BE3B37D00386787 /* ContentView.swift */,
 				A5BCB3102BE3B37D00386787 /* Assets.xcassets */,
@@ -67,6 +82,32 @@
 				A5BCB3132BE3B37D00386787 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5BCB31B2BE3B38200386787 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BCB31C2BE3B38D00386787 /* Home.swift */,
+				A5BCB31E2BE3B43D00386787 /* BlurWindow.swift */,
+				A5BCB3202BE3B86C00386787 /* TabButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5BCB3252BE3DFF300386787 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5BCB3262BE3E00600386787 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5BCB3282BE3E06900386787 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5BCB3292BE3E08800386787 /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +126,9 @@
 			dependencies = (
 			);
 			name = PinterstApp;
+			packageProductDependencies = (
+				A5BCB3232BE3DFE000386787 /* SDWebImageSwiftUI */,
+			);
 			productName = PinterstApp;
 			productReference = A5BCB3092BE3B37D00386787 /* PinterstApp.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +157,9 @@
 				Base,
 			);
 			mainGroup = A5BCB3002BE3B37D00386787;
+			packageReferences = (
+				A5BCB3222BE3DFE000386787 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = A5BCB30A2BE3B37D00386787 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BCB32A2BE3E08800386787 /* ImageViewModel.swift in Sources */,
+				A5BCB31F2BE3B43D00386787 /* BlurWindow.swift in Sources */,
+				A5BCB3272BE3E00600386787 /* ImageModel.swift in Sources */,
 				A5BCB30F2BE3B37D00386787 /* ContentView.swift in Sources */,
+				A5BCB31D2BE3B38D00386787 /* Home.swift in Sources */,
+				A5BCB3212BE3B86C00386787 /* TabButton.swift in Sources */,
 				A5BCB30D2BE3B37D00386787 /* PinterstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5BCB3222BE3DFE000386787 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5BCB3232BE3DFE000386787 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5BCB3222BE3DFE000386787 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5BCB3012BE3B37D00386787 /* Project object */;
 }

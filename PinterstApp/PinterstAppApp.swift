@@ -13,5 +13,7 @@ struct PinterstAppApp: App {
         WindowGroup {
             ContentView()
         }
+        //hiding title bar
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
